@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Jobs</title>
+</head>
+<body onload="render()">
+<header>
+    <div class="container header ">
+
+        <a class="logo-wrapper all-flex" href="/">
+            <img alt="logo-img" src="./images/trades.png">
+        </a>
+        <div class="navigation-links ">
+            <p class="navigation-link w-button" >DEMO</p>
+            <p class="navigation-link w-button" >HOME</p>
+            <p   class="navigation-link w-button" onclick='solutionInfo()'>
+                SOLUTIONS
+                <i class="fa fa-angle-down" style="font-size:13px;color:black"></i>
+            </p>
+
+
+            <p class="navigation-link w-button"  onclick='solutionInfo()' >
+                RESOURCES
+                <i class="fa fa-angle-down" style="font-size:13px;color:black"></i>
+
+            </p>
+            <p class="navigation-link w-button" >PRICING</p>
+            <p class="navigation-link w-button"  onclick='solutionInfo()' >
+                LOGIN
+                <i class="fa fa-angle-down" style="font-size:13px;color:black"></i>
+            </p>
+
+        </div>
+
+        <button class="btn-menu">
+            <img alt="menu" src="./SVGs/three-dots.svg">
+        </button>
+    </div>
+    <div class="solution-li-class">
+        <ul class="">
+            <li>For Trade Workers</li>
+            <li>For Trade Workers</li>
+            <li>For Trade Workers</li>
+            <li>For Trade Workers</li>
+            <li>For Trade Workers</li>
+        </ul>
+        <div class="">
+            <img width="100" src="https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a2b5b83f571_logo%20(1).png" alt="">
+        </div>
+    </div>
+    </div>
+</header>
+<div class="job-section container">
+    <h1 class="h1-page">Find your job in the trades</h1>
+    <div class="form-section">
+        <form action="#">
+            <div class="inputs">
+                <div class="input-holder">
+                    <label class="label-input" for="trades">Trades</label>
+                    <input class="input-text" id="trades" placeholder="Boilermaker, Carpentar, Pipefitter" type="text">
+                </div>
+                <div class="input-holder">
+                    <label class="label-input" for="location">Location</label>
+                    <input class="input-text" id="location" placeholder="Enter your location" type="text">
+                </div>
+            </div>
+            <button class="btn-search all-flex mx-auto">search</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="video-section container">
+    <h2 class="h1-page h1-video-section">Open Position</h2>
+    <div class="">
+        <form action="/" class="pagination-form" method="get">
+            <span>Showing </span>
+            <span>
+                <select class="select" id="select-per-page">
+                    <option value="5">5</option>
+                    <option selected value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+            </span>
+            <span style="margin-right: 10px ">results out of <span id="max-items">0</span>.  </span>
+            <div class="all-flex">
+                <button class="btn-pagination all-flex"
+                        id="prev-btn"
+                        type="button"
+                >
+                    <span>Previous</span>
+                </button>
+                <span>
+                    | <span id="current-page">1</span> |
+                </span>
+                <button class="btn-pagination all-flex"
+                        id="next-btn"
+                        type="button"
+                >
+                    Next
+                </button>
+            </div>
+        </form>
+        <button class="btn-all all-flex mx-auto" id="all-btn">
+            All
+        </button>
+        <div id="cards">
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="footer-subs container">
+    <img alt="mail-logo" class="mail-logo  all-flex"
+         src="./images/630f851060702a5a3383f52d_icons8-like-message-100.png">
+    <p class="sign-up  all-flex">Sign up to recieve a monthly email on the latest news!</p>
+    <div class="footer-submit ">
+        <label>
+            <input class="" placeholder="Email address" type="text">
+        </label>
+
+        <img alt="submit" src="./images/arrow_next.png">
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="start">
+            <div class="w-col w-col-6">
+                <div class="logo-footer">
+                    <a class="brand-logo footer-logo w-nav-brand" href="/webtemplatepages/old-home">
+                        <img alt="footer logo"
+                             src="https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a2a6583f5ee_t-removebg-preview.png" width="236">
+                    </a>
+                </div>
+                <div class="w-container">
+                    <div class="footer-social-icons-direction container">
+                        <a class="footer-social-icons facebook w-inline-block"
+                           href="https://www.facebook.com/tradesfactor/">
+                            <img src="./SVGs/630f851060702a5ecd83f5f2_facebook.svg" alt="facebook-icon" style="padding: 5px">
+
+                        </a>
+                        <a class="footer-social-icons twitter w-inline-block" href="https://twitter.com/tradesfactor">
+                            <img src="./SVGs/630f851060702a130083f5fe_twitter.svg" alt="twitter-icon" style="padding: 5px">
+                        </a>
+                        <a class="footer-social-icons instagram w-inline-block"
+                           href="https://www.instagram.com/tradesfactor/">
+                            <img src="./SVGs/630f851060702a062c83f5fd_instagram.svg" alt="instagram-icon" style="padding: 5px">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="">
+                        <h6 class="footer-nav-title">
+                            The Platform
+                        </h6>
+                        <a class="footer-link text-small" href="/trades-workers">
+                            Trade Workers
+                        </a>
+                        <a class="footer-link text-small" href="/tradesfactor-schools">
+                            Students
+                        </a>
+                        <a class="footer-link text-small" href="/employers-post-a-job">
+                            Employers
+                        </a>
+                        <a class="footer-link text-small" href="/tradesfactor-for-schools">
+                            Schools
+                        </a>
+                    </div>
+                    <div class="">
+                        <h6 class="footer-nav-title">
+                            Company
+                        </h6>
+                        <a class="footer-link text-small" href="/about">
+                            About
+                        </a>
+                        <a aria-current="page" class="footer-link text-small w--current" href="/find-a-job">
+                            Jobs
+                        </a>
+                        <a class="footer-link text-small" href="/tradesfactor-faqs">
+                            FAQ
+                        </a>
+                        <a class="footer-link text-small"
+                           href="https://tradesfactor.ladesk.com/scripts/generateWidget.php?v=5.17.24.2&amp;t=1584692084&amp;cwid=505c7373&amp;cwrt=C&amp;cwt=form_popout&amp;vid=bclz6l1enhgrsqdw31tlgt1n7b95z&amp;ud=%7B%7D&amp;pt=TradesFactor%20Inc.&amp;ref=https%3A%2F%2Ftradesfactor.com%2FLandingPage%2FMain%2F%23team" target="_blank">
+                            Support
+                        </a>
+                        <a class="footer-link text-small" href="/policies">
+                            Policy
+                        </a>
+                    </div>
+                    <div class="">
+                        <h6 class="footer-nav-title">
+                            Resources
+                        </h6><a class="footer-link text-small" href="/blog-tradesfactor">
+                        Blog
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-col w-col-6">
+                <h5 class="heading-10">
+                    Demo
+                </h5>
+                <h3 class="heading-11">
+                    Request a <br>Demo
+                </h3>
+                <div class="form-block w-form">
+                    <form aria-label="emailAccessFrom" data-name="emailAccessFrom" id="emailAccessFrom" method="get"
+                          name="wf-form-emailAccessFrom">
+                        <div class="input-group">
+                            <input class="input button-group-item w-input" data-name="Email Access" id="emailAccess"
+                                   maxlength="256" name="Email-Access"
+                                   placeholder="     Enter your email address..." required="" type="email">
+                            <input class="button button-group-item w-button" data-wait="Please wait..." type="submit"
+                                   value="  ">
+                        </div>
+                    </form>
+                </div>
+                <div class="div-block-3">
+                    <img alt="footer image "
+                         class="image" loading="lazy"
+                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 74vw, (max-width: 991px) 46vw, (max-width: 1279px) 50vw, 615px"
+                         src="https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%201_Artboard%20.png"
+                         srcset="https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%25201_Artboard%2520-p-500.png 500w, https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%25201_Artboard%2520-p-800.png 800w, https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%25201_Artboard%2520-p-1080.png 1080w, https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%25201_Artboard%2520-p-1600.png 1600w, https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%25201_Artboard%2520-p-2000.png 2000w, https://assets.website-files.com/630f851060702a6d0683f4db/630f851060702a43b283f5ed_tfifooter_Artboard%201_Artboard%20.png 2084w" width="615">
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="div-block-2">
+                <div class="footer-copyright">
+                    © Copyright TradesFactor 2020. All rights reserved
+                </div>
+            </div>
+            <div class="terms-privacy">
+                <div class="w-col w-col-6">
+                    <a class="footer-copy-link hint" href="/policies">
+                        Privacy policy
+                    </a>
+                </div>
+                <div class="w-col w-col-6">
+                    <a class="footer-copy-link hint" href="/policies">
+                        Terms and services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+<script src="index.js"></script>
+
+</html>
+
+<script>
+    function solutionInfo() {
+        let para = document.getElementsByClassName('solution-li-class')
+        Array.from(para).forEach((x) => {
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        });
+    }
+</script>
